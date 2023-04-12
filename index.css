@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: pink;
+}
+.box {
+  height: 150px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.box-1 {
+  background: red;
+}
+.box-2 {
+  background: blue;
+}
+.box-3 {
+  background: green;
+}
+
+@media screen and (max-width: 400px) {
+  .box {
+    width: 200px !important;
+  }
+}
